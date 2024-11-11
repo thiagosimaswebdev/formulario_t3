@@ -26,9 +26,46 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Preencha com e-mail" />
                 </div>
-
-
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite a senha" />
+                </div>
             </fieldset>
+            <fieldset>
+                <label for="estados">Estados:</label>
+                <select name="estados" id="estados">
+                    <option value="SE">SE</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                </select>
+
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="number" name="nascimento" id="nascimento" />
+
+                <label for="foto">Selecione uma foto:</label>
+                <input type="file" name="foto" id="foto" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Você é um robô?</legend>
+
+                <img src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png"
+                    width="100" alt="Figura de um robô vede" />
+                <div>
+                <input type="radio" name="robo" id="sim"/>
+                <label for="sim">Sim, sou um robô</label>
+                <input type="radio" name="robo" id="nao"/>
+                <label for="nao">Não, sou um robô</label>
+                <input type="radio" name="robo" id="talvez"/>
+                <label for="talvez">Talvez eu seja um robô</label>
+                </div>
+
+                <input type="checkbox" name="acordo" id="acordo"/>
+                <label for="acordo">Declaro que sou um robô e vim pedir educação no ChatGPT</label>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+
 
 
         </form>
